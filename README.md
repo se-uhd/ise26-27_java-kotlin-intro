@@ -67,6 +67,6 @@ gives the files relative to these directories and the main classes relative to t
 | `kotlin/Delegation.kt` | `kotlin.DelegationKt` | Class delegation with `by` and the `lazy` property delegate |
 | `kotlin/CompanionObjects.kt` | `kotlin.CompanionObjectsKt` | A companion object with a constant and a factory function |
 | `kotlin/Extensions.kt` | `kotlin.ExtensionsKt` | An extension function and an extension property on `String` |
-| `kotlin/ScopeFunctions.kt` | `kotlin.ScopeFunctionsKt` | The scope functions `let`, `apply`, `also`, `with`, and `run` |
+| `kotlin/ScopeFunctions.kt` | `kotlin.ScopeFunctionsKt` | One example for each scope function: `let`, `with`, `run` (with and without an object), `apply`, and `also` |
 | `interop/KotlinCallsJava.kt` | `interop.KotlinCallsJavaKt` | Kotlin code that uses Java static members, fields, getters and setters, and platform types |
 | `interop/JavaCallsKotlin.java` | `interop.JavaCallsKotlin` | Java code that uses Kotlin properties, a data class, an extension function, and null checks |
