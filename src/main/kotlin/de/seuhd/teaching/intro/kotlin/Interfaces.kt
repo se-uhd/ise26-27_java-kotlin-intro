@@ -10,6 +10,7 @@ interface Logger {
     fun log(message: String) = println("[log] $message")
 }
 
+// mix-in: Person gets greet() and log()
 class Person(override val name: String) : Named, Logger
 
 fun main() {

@@ -59,14 +59,15 @@ gives the files relative to these directories and the main classes relative to t
 | `kotlin/ControlFlow.kt` | `kotlin.ControlFlowKt` | `if` and `when` expressions, ranges, and loops |
 | `kotlin/Functions.kt` | `kotlin.FunctionsKt` | Default and named arguments, lambdas, and function types |
 | `kotlin/Classes.kt` | `kotlin.ClassesKt` | Classes, data classes, and operator overloading |
-| `kotlin/NullSafety.kt` | `kotlin.NullSafetyKt` | Nullable types, safe calls, and the Elvis operator |
+| `kotlin/NullSafety.kt` | `kotlin.NullSafetyKt` | Nullable types, safe calls, the Elvis operator, and the not-null assertion operator `!!` |
 | `kotlin/DataClasses.kt` | `kotlin.DataClassesKt` | Data classes: generated `toString`, `equals`, `copy`, and destructuring |
 | `kotlin/Inheritance.kt` | `kotlin.InheritanceKt` | Final and `open` classes, overriding, and a `sealed` class with an exhaustive `when` |
 | `kotlin/Interfaces.kt` | `kotlin.InterfacesKt` | Interfaces with an abstract property and default implementations |
 | `kotlin/Generics.kt` | `kotlin.GenericsKt` | A generic class, a generic function with an upper bound, and variance |
-| `kotlin/Delegation.kt` | `kotlin.DelegationKt` | Class delegation with `by` and the `lazy` property delegate |
+| `kotlin/ClassDelegation.kt` | `kotlin.ClassDelegationKt` | Class delegation with `by` |
+| `kotlin/PropertyDelegation.kt` | `kotlin.PropertyDelegationKt` | The `lazy` property delegate and the same behavior with a getter written by hand |
 | `kotlin/CompanionObjects.kt` | `kotlin.CompanionObjectsKt` | A companion object with a constant and a factory function |
-| `kotlin/Extensions.kt` | `kotlin.ExtensionsKt` | An extension function and an extension property on `String` |
+| `kotlin/Extensions.kt` | `kotlin.ExtensionsKt` | An extension function on `String` |
 | `kotlin/ScopeFunctions.kt` | `kotlin.ScopeFunctionsKt` | One example for each scope function: `let`, `with`, `run` (with and without an object), `apply`, and `also` |
 | `interop/KotlinCallsJava.kt` | `interop.KotlinCallsJavaKt` | Kotlin code that uses Java static members, fields, getters and setters, and platform types |
 | `interop/JavaCallsKotlin.java` | `interop.JavaCallsKotlin` | Java code that uses Kotlin properties, a data class, an extension function, and null checks |
