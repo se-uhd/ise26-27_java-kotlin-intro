@@ -1,7 +1,7 @@
 # Software Engineering (ISE) Winter Semester 2026/27
 
 This repository contains the examples for the lecture on Java and Kotlin. The Java examples show packages, static
-members, and the compact source files of JDK 25. The Kotlin examples follow the
+members, and the compact source files and instance `main` methods of JDK 25. The Kotlin examples follow the
 [Kotlin tour](https://kotlinlang.org/docs/kotlin-tour-welcome.html) that the slides use, and two examples show how Java
 and Kotlin code call each other.
 
@@ -53,7 +53,7 @@ gives the files relative to these directories and the main classes relative to t
 | File | Main class | Content |
 |---|---|---|
 | `Main.java` | `Main` | Packages, imports, and static members of `util.Helper` |
-| `util/MyObject.java` | `util.MyObject` | Autoboxing and a `main` method without parameters |
+| `util/MyObject.java` | `util.MyObject` | Autoboxing with a `final` `Integer` field |
 | `kotlin/Basics.kt` | `kotlin.BasicsKt` | Variables, string templates, types at runtime, `Any`, and `Unit` |
 | `kotlin/Collections.kt` | `kotlin.CollectionsKt` | Lists, sets, and maps |
 | `kotlin/ControlFlow.kt` | `kotlin.ControlFlowKt` | `if` and `when` expressions, ranges, and loops |

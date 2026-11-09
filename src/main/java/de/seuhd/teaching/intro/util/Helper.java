@@ -4,11 +4,11 @@ public class Helper {
     public static final String GROUP_NAME = "SE@UHD";
 
     public void doSomething() {
-        System.out.println("Doing something...");
+        IO.println("Doing something...");
     }
 
     public static void doSomethingElse() {
-        System.out.println("Doing something else...");
+        IO.println("Doing something else...");
     }
 
     public void changeObject(MyObject obj, int newValue) {

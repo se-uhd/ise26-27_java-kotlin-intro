@@ -4,10 +4,9 @@ public class MyObject {
     public int value;
     private final Integer VALUE = 1;
 
-    static void main() {
-        var o = new MyObject();
-        IO.println(o.VALUE);
-        o.doSomething();
+    void main() {
+        IO.println(VALUE);
+        doSomething();
     }
 
     private void doSomething() {
