@@ -26,7 +26,7 @@ public class SynchronizedExample {
         staticSum = staticSum + 1;
     }
 
-    // a synchronized block locks only the statements in the block
+    // a synchronized block locks the object in parentheses (this) only while its statements run
     public void syncBlockCalculate() {
         synchronized (this) {
             setCount(getCount()+1);
@@ -40,7 +40,7 @@ public class SynchronizedExample {
                 service.submit(SynchronizedExample::syncStaticCalculate);
                 service.submit(this::syncBlockCalculate);
             }
-        } // close() waits until all submitted tasks have finished
+        } // try-with-resources calls close(), which waits until all submitted tasks have finished
         IO.println(sum + ", " + staticSum + ", " + count); // 1000, 1000, 1000
     }
 }

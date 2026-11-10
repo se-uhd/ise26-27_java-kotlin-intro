@@ -8,7 +8,7 @@ fun printMessage(msg: String) {
     println(msg)
 }
 
-// single-expression function (named sum on the slide, which would clash with sum above)
+// single-expression function. The slide names it sum, but that name would conflict with the function sum above.
 fun sumSingleExpression(x: Int, y: Int) = x + y
 
 fun printMessageWithPrefix(message: String, prefix: String) {

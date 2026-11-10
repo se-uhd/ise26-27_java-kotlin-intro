@@ -2,7 +2,8 @@ package de.seuhd.teaching.intro.control;
 
 public class SwitchExample {
     String classify(String day) {
-        // JDK >= 14: switch as an expression, multiple case labels, no fall through, so no break
+        // JDK >= 14: switch as an expression with multiple case labels. A case with an arrow (->) does not fall through
+        // to the next case and needs no break.
         String result = switch (day) {
             case "MON", "TUE", "WED", "THU", "FRI" -> "Weekday";
             case "SAT", "SUN" -> "Weekend";

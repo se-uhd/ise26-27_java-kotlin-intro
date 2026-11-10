@@ -2,7 +2,8 @@ package de.seuhd.teaching.intro.records;
 
 import java.util.UUID;
 
-// the class that the record User replaces, without the equals, hashCode, and toString that the record also generates
+// the class that the record User replaces. Unlike the record, this class does not override equals, hashCode, and
+// toString.
 class UserClass {
     private final UUID id;
     private final String firstName;

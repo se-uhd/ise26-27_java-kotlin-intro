@@ -8,7 +8,7 @@ fun main() {
     println(Helper.GROUP_NAME)
     Helper.doSomethingElse()
 
-    // Kotlin creates Java objects without new
+    // Kotlin calls Java constructors without new
     val helper = Helper()
     helper.doSomething()
 
@@ -22,7 +22,8 @@ fun main() {
     dog.name = "Fifi"
     println(dog.name)
 
-    // Java declares no nullability, so getenv returns the platform type String!
+    // Java does not declare whether getenv can return null.
+    // Kotlin therefore types the result as the platform type String!
     val home: String? = System.getenv("HOME")
     println(home ?: "HOME is not set")
 }

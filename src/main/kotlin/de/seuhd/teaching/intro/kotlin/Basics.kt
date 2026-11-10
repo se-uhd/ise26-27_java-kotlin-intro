@@ -11,7 +11,7 @@ fun greet() {
 fun main() {
     println("Hello, world!")
 
-    // val cannot be reassigned, var can
+    // a val cannot be reassigned, but a var can
     val customers = 10
     var orders = 3
     orders += 1

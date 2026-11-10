@@ -22,7 +22,7 @@ class Square(val side: Double) : Shape()
 fun area(shape: Shape): Double = when (shape) {
     is Circle -> Math.PI * shape.radius * shape.radius
     is Square -> shape.side * shape.side
-    // no else needed: Shape is sealed
+    // no else branch is needed because Circle and Square are the only subclasses of the sealed class Shape
 }
 
 fun main() {
