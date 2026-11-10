@@ -10,7 +10,7 @@ class BasicMachine : Machine {
     override fun clean() = "cleaned"
 }
 
-class EspressoMachine(base: Machine) : Machine by base {
+class EspressoMachine(delegate: Machine) : Machine by delegate {
     override fun brew() = "espresso"
 }
 

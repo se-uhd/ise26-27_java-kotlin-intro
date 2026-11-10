@@ -1,7 +1,7 @@
 package de.seuhd.teaching.intro.kotlin
 
 interface Named {
-    val name: String // abstract property
+    val name: String // abstract property (value stored in object)
 
     fun greet() = "Hello, $name!" // default implementation
 }

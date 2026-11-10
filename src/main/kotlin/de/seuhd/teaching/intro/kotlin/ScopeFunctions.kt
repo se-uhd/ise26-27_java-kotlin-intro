@@ -1,7 +1,7 @@
 package de.seuhd.teaching.intro.kotlin
 
 fun letExample(name: String?) {
-    name?.let { println("Hello, $it!") } // only if name is not null
+    name?.let { println("Hello, $it!") } // runs only if name is not null
     listOf("one", "two", "three")
         .map { it.length }
         .filter { it > 3 }

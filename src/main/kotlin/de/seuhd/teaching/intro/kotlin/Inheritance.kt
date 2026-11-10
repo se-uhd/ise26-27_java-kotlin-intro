@@ -11,8 +11,7 @@ class Dog(name: String) : Animal(name) {
 }
 
 // class Puppy : Dog("Rex")
-// error: This type is final,
-// so it cannot be extended.
+// error: This type is final, so it cannot be extended.
 
 sealed class Shape
 

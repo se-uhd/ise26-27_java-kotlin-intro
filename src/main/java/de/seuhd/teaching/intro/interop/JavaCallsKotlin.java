@@ -3,6 +3,7 @@ package de.seuhd.teaching.intro.interop;
 import de.seuhd.teaching.intro.kotlin.ClassesKt;
 import de.seuhd.teaching.intro.kotlin.Contact;
 import de.seuhd.teaching.intro.kotlin.Point;
+import de.seuhd.teaching.intro.kotlin.User;
 
 public class JavaCallsKotlin {
     void main() {
@@ -18,6 +19,11 @@ public class JavaCallsKotlin {
 
         // top-level and extension functions in Classes.kt are static methods of the class ClassesKt
         IO.println(ClassesKt.unaryMinus(point));
+
+        // functions of a companion object are called through its static field Companion,
+        // and a const val becomes a static final field
+        User guest = User.Companion.guest();
+        IO.println(guest.getLoginName() + ", " + User.MAX_LOGIN_NAME_LENGTH);
 
         // Kotlin checks at runtime that a non-null parameter does not receive null
         try {
